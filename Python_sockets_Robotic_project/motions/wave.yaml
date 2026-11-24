@@ -1,0 +1,72 @@
+sequence_name: wave
+
+steps:
+  - name: init
+    motion: moveJ
+    joints_deg: [-60, -65, -100, 170, -60, 0]
+    acceleration: 1.2
+    velocity: 0.10
+    time: 4.0
+    blend: 0.0
+
+  - name: approach_wave
+    motion: moveL
+    target_xyz_mm: [-400, -250, 500]
+    target_rpy_deg: [0, 0, 90]
+    acceleration: 1.2
+    velocity: 0.10
+    time: 3.0
+    blend: 0.0
+
+  - name: wave_right
+    motion: moveL
+    target_xyz_mm: [-350, -250, 500]
+    target_rpy_deg: [0, 0, 90]
+    acceleration: 1.2
+    velocity: 0.10
+    time: 1.0
+    blend: 0.0
+
+  - name: wave_left
+    motion: moveL
+    target_xyz_mm: [-450, -250, 500]
+    target_rpy_deg: [0, 0, 90]
+    acceleration: 1.2
+    velocity: 0.10
+    time: 1.0
+    blend: 0.0
+
+  - name: wave_right
+    motion: moveL
+    target_xyz_mm: [-350, -250, 500]
+    target_rpy_deg: [0, 0, 90]
+    acceleration: 1.2
+    velocity: 0.10
+    time: 1.0
+    blend: 0.0
+
+  - name: wave_left
+    motion: moveL
+    target_xyz_mm: [-450, -250, 500]
+    target_rpy_deg: [0, 0, 90]
+    acceleration: 1.2
+    velocity: 0.10
+    time: 1.0
+    blend: 0.0
+
+  - name: back_to_center
+    motion: moveL
+    target_xyz_mm: [-400, -250, 500]
+    target_rpy_deg: [0, 0, 90]
+    acceleration: 1.2
+    velocity: 0.10
+    time: 1.0
+    blend: 0.0
+
+  - name: init
+    motion: moveJ
+    joints_deg: [-60, -65, -100, 170, -60, 0]
+    acceleration: 1.2
+    velocity: 0.10
+    time: 3.0
+    blend: 0.0
